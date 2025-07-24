@@ -22,3 +22,16 @@ jobs:
         uses: googleapis/release-please-action@v4
         with:
           release-type: simple
+
+      - name: Create zip of repository
+        run: |
+          zip -r openeo-${{ steps.get_tag.outputs.tag_name }}.zip . -x '*.git*' '.github*'
+        if: ${{ steps.release.outputs.release_created }}
+        
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: openeo-${{ steps.release.outputs.tag_name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ steps.release.outputs.release_created }}
