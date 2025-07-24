@@ -35,5 +35,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: openeo-${{ steps.release.outputs.tag_name }}.zip
           asset_name: openeo-${{ steps.release.outputs.tag_name }}.zip
-          tag: ${{ steps.release.outputs.tag_name }  
+          tag: ${{ steps.release.outputs.tag_name }}
         if: ${{ steps.release.outputs.release_created }}
