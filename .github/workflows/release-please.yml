@@ -19,13 +19,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run release-please
+        id: release
         uses: googleapis/release-please-action@v4
         with:
           release-type: simple
 
       - name: Create zip of repository
         run: |
-          zip -r openeo-${{ steps.get_tag.outputs.tag_name }}.zip . -x '*.git*' '.github*'
+          zip -r openeo-${{ steps.release.outputs.tag_name }}.zip . -x '*.git*' '.github*'
         if: ${{ steps.release.outputs.release_created }}
         
       - name: Upload release asset
