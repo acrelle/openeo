@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.3](https://github.com/acrelle/openeo/compare/v0.2.2...v0.2.3) (2025-07-24)
+
+
+### Bug Fixes
+
+* 3 ([0de3b4b](https://github.com/acrelle/openeo/commit/0de3b4b5fddce833235ce74724ade984e7c807b8))
+* test2 ([698a259](https://github.com/acrelle/openeo/commit/698a259a3b484be65708577289963974458208f7))
+
 ## [0.2.2](https://github.com/acrelle/openeo/compare/v0.2.1...v0.2.2) (2025-07-24)
 
 
