@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/acrelle/openeo/compare/v0.2.0...v0.2.1) (2025-07-24)
+
+
+### Bug Fixes
+
+* Update release-please.yml ([b8436fe](https://github.com/acrelle/openeo/commit/b8436fe910fe856a07fe82449d677f7d071cdf61))
+
 ## [0.2.0](https://github.com/acrelle/openeo/compare/v0.2.2...v0.2.0) (2025-07-24)
 
 
